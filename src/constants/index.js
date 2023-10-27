@@ -1,30 +1,29 @@
 import {
-    // mobile,
     backend,
     creator,
     web,
     javascript,
     typescript,
-    html,
     css,
     reactjs,
     redux,
     tailwind,
-    // nodejs,
-    // mongodb,
     git,
-    // figma,
-    // docker,
-    meta,
     starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
+    github,
   } from "../assets";
-  
+  import bootstrap from "../assets/bootstrap.png";
+  import ruby from "../assets/ruby.png";
+  import rubyOnRails from "../assets/rubyOnRails.png";
+  import sql from "../assets/sql.png";
+  import postgresql from "../assets/postgresql.png";
+  import antD from "../assets/antD.svg";
+  import html5Icon from "../assets/html.png";
+  import maura from "../assets/Maura.jpeg";
+  import tvshows from "../assets/TVshows.jpg";
+  import bookstore from "../assets/Bookstore.jpg";
+
   export const navLinks = [
     {
       id: "about",
@@ -62,7 +61,7 @@ import {
   const technologies = [
     {
       name: "HTML 5",
-      icon: html,
+      icon: html5Icon,
     },
     {
       name: "CSS 3",
@@ -74,11 +73,11 @@ import {
     },
     {
       name: "Bootstrap",
-      icon: tailwind,
+      icon: bootstrap,
     },
     {
       name: "Ant Design",
-      icon: tailwind,
+      icon: antD,
     },
     {
       name: "JavaScript",
@@ -98,25 +97,20 @@ import {
     },
     {
       name: "SQL",
-      icon: tailwind,
+      icon: sql,
     },
     {
       name: "PostgreSQL",
-      icon: tailwind,
+      icon: postgresql,
     },
     {
       name: "Ruby",
-      icon: tailwind,
+      icon: ruby,
     },
     {
       name: "Ruby on Rails",
-      icon: tailwind,
+      icon: rubyOnRails,
     },
-    // {
-    //   name: "Node JS",
-    //   icon: nodejs,
-    // },
-
     {
       name: "Three JS",
       icon: threejs,
@@ -127,7 +121,7 @@ import {
     },
     {
       name: "GitHub",
-      icon: git,
+      icon: github,
     },
   ];
   
@@ -144,74 +138,8 @@ import {
         "Implementing responsive design and ensuring cross-browser compatibility.",
       ],
     },
-    // {
-    //   title: "React Native Developer",
-    //   company_name: "Tesla",
-    //   icon: tesla,
-    //   iconBg: "#E6DEDD",
-    //   date: "Jan 2021 - Feb 2022",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
-    // {
-    //   title: "Web Developer",
-    //   company_name: "Shopify",
-    //   icon: shopify,
-    //   iconBg: "#383E56",
-    //   date: "Jan 2022 - Jan 2023",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
-    // {
-    //   title: "Full stack Developer",
-    //   company_name: "Meta",
-    //   icon: meta,
-    //   iconBg: "#E6DEDD",
-    //   date: "Jan 2023 - Present",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
   ];
-  
-  const testimonials = [
-    // {
-    //   testimonial:
-    //     "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    //   name: "Sara Lee",
-    //   designation: "CFO",
-    //   company: "Acme Co",
-    //   image: "https://randomuser.me/api/portraits/women/4.jpg",
-    // },
-    // {
-    //   testimonial:
-    //     "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    //   name: "Chris Brown",
-    //   designation: "COO",
-    //   company: "DEF Corp",
-    //   image: "https://randomuser.me/api/portraits/men/5.jpg",
-    // },
-    // {
-    //   testimonial:
-    //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    //   name: "Lisa Wang",
-    //   designation: "CTO",
-    //   company: "456 Enterprises",
-    //   image: "https://randomuser.me/api/portraits/women/6.jpg",
-    // },
-  ];
-  
+
   const projects = [
     {
       name: "Maura",
@@ -235,8 +163,29 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: maura,
+      source_code_link: "https://github.com/reggeditt/church-management-software",
+    },
+    {
+      name: "TV Shows App",
+      description:
+        "a front-end webapp that allows users to see their favorite shows and other shows that are related to their preferences. Built with React, Redux, and the TV Maze API.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "redux",
+          color: "green-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tvshows,
+      source_code_link: "https://github.com/reggeditt/react-capstone",
     },
     {
       name: "Book Store",
@@ -256,31 +205,10 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: bookstore,
+      source_code_link: "https://github.com/reggeditt/Book-Store",
     },
-    // {
-    //   name: "Trip Guide",
-    //   description:
-    //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    //   tags: [
-    //     {
-    //       name: "nextjs",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "supabase",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "css",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: tripguide,
-    //   source_code_link: "https://github.com/",
-    // },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };
   
