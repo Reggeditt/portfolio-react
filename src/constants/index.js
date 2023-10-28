@@ -22,7 +22,7 @@ import {
   import html5Icon from "../assets/html.png";
   import maura from "../assets/Maura.jpeg";
   import tvshows from "../assets/TVshows.jpg";
-  import bookstore from "../assets/Bookstore.jpg";
+  import bookstore from "../assets/bookstore.jpg";
 
   export const navLinks = [
     {
