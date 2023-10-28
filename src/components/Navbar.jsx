@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -34,20 +34,20 @@ const Navbar = () => {
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-        <Link
-          to='/'
+        <a
+          href='/'
           className='flex items-center gap-2'
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
+          // onClick={() => {
+          //   // setActive("");
+          //   window.scrollTo(0, 0);
+          // }}
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Tetteh &nbsp;
             <span className='sm:block hidden'> | Web Dev</span>
           </p>
-        </Link>
+        </a>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (

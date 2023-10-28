@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
@@ -18,7 +18,7 @@ const Computers = ({ isMobile }) => {
         castShadow
         shadow-mapSize={1024}
       />
-      <pointLight intensity={10} />
+      <pointLight intensity={1} />
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}

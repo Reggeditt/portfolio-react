@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -14,11 +14,11 @@ const ServiceCard = ({ index, title, icon }) => (
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div
-        // options={{
-        //   max: 45,
-        //   scale: 1,
-        //   speed: 450, 
-        // }}
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
         className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
       >
         <img
@@ -47,11 +47,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        {`I'm a skilled software developer with experience in
-        JavaScript and Ruby, and expertise in frameworks and libraries like React, Ruby on Rails, and
+        I'm a skilled software developer with experience in TypeScript and
+        JavaScript, and expertise in frameworks like React, Node.js, and
         Three.js. I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!`}
+        real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

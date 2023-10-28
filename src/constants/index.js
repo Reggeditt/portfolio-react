@@ -58,72 +58,79 @@ import {
     },
   ];
   
-  const technologies = [
-    {
-      name: "HTML 5",
-      icon: html5Icon,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Bootstrap",
-      icon: bootstrap,
-    },
-    {
-      name: "Ant Design",
-      icon: antD,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "SQL",
-      icon: sql,
-    },
-    {
-      name: "PostgreSQL",
-      icon: postgresql,
-    },
-    {
-      name: "Ruby",
-      icon: ruby,
-    },
-    {
-      name: "Ruby on Rails",
-      icon: rubyOnRails,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "Git",
-      icon: git,
-    },
-    {
-      name: "GitHub",
-      icon: github,
-    },
-  ];
+  const technologies = {
+    frontend: [
+      {
+        name: "HTML 5",
+        icon: html5Icon,
+      },
+      {
+        name: "CSS 3",
+        icon: css,
+      },
+      {
+        name: "Tailwind CSS",
+        icon: tailwind,
+      },
+      {
+        name: "Bootstrap",
+        icon: bootstrap,
+      },
+      {
+        name: "Ant Design",
+        icon: antD,
+      },
+      {
+        name: "JavaScript",
+        icon: javascript,
+      },
+      {
+        name: "TypeScript",
+        icon: typescript,
+      },
+      {
+        name: "React JS",
+        icon: reactjs,
+      },
+      {
+        name: "Redux Toolkit",
+        icon: redux,
+      },
+      {
+        name: "Three JS",
+        icon: threejs,
+      },
+    ],
+    backend: [
+      {
+        name: "SQL",
+        icon: sql,
+      },
+      {
+        name: "PostgreSQL",
+        icon: postgresql,
+      },
+      {
+        name: "Ruby",
+        icon: ruby,
+      },
+      {
+        name: "Ruby on Rails",
+        icon: rubyOnRails,
+      },
+    ],  
+    tools:
+    [
+      {
+        name: "Git",
+        icon: git,
+      },
+      {
+        name: "GitHub",
+        icon: github,
+      },
+    ],
+  };
   
   const experiences = [
     {
