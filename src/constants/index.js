@@ -60,10 +60,10 @@ import {
   
   const technologies = {
     frontend: [
-      {
-        name: "HTML 5",
-        icon: html5Icon,
-      },
+      // {
+      //   name: "HTML5",
+      //   icon: html5Icon,
+      // },
       {
         name: "CSS 3",
         icon: css,
