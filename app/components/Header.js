@@ -18,9 +18,9 @@ const Header = () => {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="sticky top-0 z-10 bg-white dark:bg-gray-900 shadow-md"
+      className="sticky top-0 z-10 bg-black dark:bg-none shadow-md"
     >
-      <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
+      <nav className="container mx-auto px-6 py-4 flex justify-between items-center text-white/80">
         <Link href="/" className="text-2xl font-bold">
           TKS
         </Link>
