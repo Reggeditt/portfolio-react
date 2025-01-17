@@ -5,22 +5,68 @@ import Image from 'next/image'
 
 const projects = [
   {
-    title: "E-Commerce Web Application",
-    description: "Developed a scalable e-commerce platform with features including user authentication, product catalog, shopping cart, and secure checkout. Implemented Redux for state management, resulting in a 30% improvement in application performance. Integrated Stripe for payment processing and AWS S3 for image storage, ensuring secure and efficient transactions. Achieved 95% test coverage using Jest and RSpec, significantly reducing bugs in production.",
-    technologies: ["React", "Redux", "Ruby on Rails", "PostgreSQL", "Stripe API", "AWS S3"],
-    image: "/placeholder.svg?height=300&width=400"
+    title: "Afrikiki - Kikibuy E-commerce Platform",
+    description: "Developed a scalable e-commerce platform with features including user authentication, product catalog, shopping cart, online wallet and secure checkout. Used react context for managing state, firebase to manage authentication and backend. Integrated hubtel for payment processing and firebase storage for image storage, ensuring secure and efficient transactions.",
+    technologies: ["React", "Next.js", "AntD", "firebase", "Hubtel API"],
+    image: "/images/afrikiki/dashboard.png",
+    demoLink: "https://kikibuy.org",
+    githubRepo: ""
   },
   {
-    title: "Portfolio Website",
-    description: "Designed and developed a responsive personal portfolio showcasing projects and skills. Implemented server-side rendering and optimized images, achieving a Lighthouse performance score of 98%. Utilized Framer Motion for smooth animations, enhancing user experience and engagement.",
-    technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
-    image: "/placeholder.svg?height=300&width=400"
+    title: "DevLinkz - Social Media Platform for Developers",
+    description: "Built a platform for developers to keep all the links to their social media profiles in one place. Implemented user authentication, profile creation, link sharing, and preview generation. Designed a responsive UI with Tailwind CSS and AntD, ensuring consistent user experience across devices. Deployed the app on Vercel, ensuring fast load times and high availability.",
+    technologies: ["Next.js", "React", "Tailwind CSS", "Firebase"],
+    image: "/images/devlinkz/linkspage.png",
+    demoLink: "https://devlinkz.vercel.app",
+    githubRepo: "https://github.com/Reggeditt/devlinkz"
   },
   {
-    title: "IoT Dashboard",
-    description: "Created a real-time IoT device management dashboard with data visualization capabilities. Implemented Firebase real-time database and authentication for secure, instant data updates. Designed responsive UI components using Material-UI, ensuring consistent user experience across devices. Integrated Chart.js for dynamic data visualization, improving data interpretation efficiency by 50%.",
-    technologies: ["React", "Firebase", "Chart.js", "Material-UI"],
-    image: "/placeholder.svg?height=300&width=400"
+    title: "Fordstan - Real-time data management system for healthcare company",
+    description: "Developed a real-time data management system for a healthcare company to track patient data, and appointments. Implemented a responsive UI with AntD and tailwindcss, ensuring a consistent user experience across devices. Used Firebase for real-time data synchronization and authentication, ensuring secure and efficient data management.",
+    technologies: ["Reactjs", "Next.js", "Firebase", "AntD", "Tailwind CSS"],
+    image: "/images/fordstan/dashboard.png",
+    demoLink: "https://fordstan.vercel.app",
+    githubRepo: "https://github.com/Reggeditt/fordstan"
+  },
+  {
+    title: "AfriBNB - A crypto platform for Africa",
+    description: "Developed a platform for users to buy, sell and trade cryptocurrencies. Implemented user authentication, wallet creation, and secure transactions. Designed a responsive UI with Tailwind CSS and AntD, ensuring a consistent user experience across devices. Used Firebase for authentication and real-time data synchronization, ensuring secure and efficient transactions.",
+    technologies: ["Next.js", "React", "Tailwind CSS" ],
+    image: "/images/afribnb/splash.png",
+    demoLink: "",
+    githubRepo: "https://github.com/narteysarso/afribnb"
+  },
+  {
+    title: "Cryptomomo Africa - A crypto platform for a crypto company",
+    description: "Developed a platform for a crypto company to showcase their products and services and also provide an API for developers to use their technology. Implemented a responsive UI with Tailwind CSS, ensuring a consistent user experience across devices. Used Next.js for server-side rendering, ensuring fast load times and high availability.",
+    technologies: ["Next.js", "React", "Tailwind CSS"],
+    image: "/images/cryptomomo/splash.png",
+    demoLink: "https://cryptomomo.africa/",
+    githubRepo: "https://github.com/narteysarso/cryptomomo-africa-web-app"
+  },
+  {
+    title: "Ashlands - Website for a farming and exports company",
+    description: "Designed and developed a website for a farming and exports company to showcase their products and services. Implemented a responsive UI with Tailwind CSS, ensuring a consistent user experience across devices. Used Next.js for server-side rendering, ensuring fast load times and high availability.",
+    technologies: ["Next.js", "React", "Tailwind CSS"],
+    image: "/images/ashlands/splash.png",
+    demoLink: "https://ashlandsexports.com/",
+    githubRepo: "https://github.com/Reggeditt/ashlandsExports"
+  },
+  {
+    title: "Lucbilt - Website for a vocational training institute",
+    description: "Designed and developed a website for a vocational training institute to showcase their programs and services.",
+    technologies: ["HTML", "Js", "CSS"],
+    image: "/images/lucbilt/splash.png",
+    demoLink: "https://lucbilt.org",
+    githubRepo: ""
+  },
+  {
+    title: "lexitainment - a website for an entertainmaint consult",
+    description: "Created a website for an entertainment consultancy to showcase their services and portfolio. Implemented a responsive design with Tailwind CSS, ensuring a seamless user experience across devices. Deployed the website on Vercel for optimal performance and reliability.",
+    image: '/images/lexitainment/splash.png',
+    technologies: ["Next.js", "React", "Tailwind CSS"],
+    demoLink: 'https://lexitainment.vercel.app/',
+    githubRepo: 'https://github.com/Reggeditt/lexitainment'
   }
 ]
 
@@ -43,13 +89,13 @@ const Projects = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden"
+              className="relative bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden"
             >
               <Image src={project.image} alt={project.title} width={400} height={300} className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-10">
                   {project.technologies.map((tech) => (
                     <span key={tech} className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
                       {tech}
@@ -57,6 +103,14 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
+                <div className="flex justify-between mt-4 absolute bottom-6 left-6 right-6">
+                  {project.demoLink && (
+                    <a href={project.demo} target="_blank" className="text-blue-500 hover:underline transition-colors">Demo link</a>
+                  )}
+                  {project.githubRepo && (
+                    <a href={project.githubRepo} target="_blank" className="text-blue-500 hover:underline transition-colors">Github repo</a>
+                  )}
+                </div>
             </motion.div>
           ))}
         </div>
